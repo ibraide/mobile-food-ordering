@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <link rel="stylesheet" href="index.css">
+       <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+       <meta name="viewport" content="width=device-width, initial-scale=1" />
+       <meta charset="UTF-8">
+       <title>Meal Ordering App</title>
+       <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <a class="skip-link" href="#menu">Skip to menu</a>
+        <header>
+            <h1>Jimmy's Diner</h1>
+            <p class="intro">The best burgers and pizzas in town</p>
+        </header>
+        <main class="order">
+            <section class="menu" id="menu" aria-label="Menu items"></section>
+            <section class="order-list" id="order-list" aria-label="Your order" aria-live="polite"></section>
+        </main>
+        <div class="checkout" id="checkout"></div>
+	    <script type="module" src="index.js"></script>
+    </body>
+</html>

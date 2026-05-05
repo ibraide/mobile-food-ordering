@@ -1,0 +1,426 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* h1, h2, h3, h4, p {
+    margin: 0;
+} */
+
+body {
+    margin: 0;
+    font-family: 'Smythe', serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #ffffff;
+    color: #000000;
+} 
+
+.skip-link {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    z-index: 1001;
+    transform: translateY(-150%);
+    background: #ffffff;
+    color: #000000;
+    padding: 10px 14px;
+    border-radius: 4px;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+header {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.18)), url(images/845364ecacaeaea44c5e3a8cd7159c5d52f26662.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: min(100%, 600px);
+    height: 167px;
+    color: #ffffff;
+    margin: 0 auto;
+    display: block;
+}
+
+h1 {
+    font-size: 39px;
+    line-height: 1;
+    width: auto;
+    padding: 46px 46px 0;
+    margin: 0;
+}
+
+.intro {
+    max-width: 275.46px;
+    font-size: 22.42px;
+    line-height: 1.1;
+    padding-left: 46px;
+    margin: 16px 0 0;
+}
+
+.order {
+    width: min(100%, 600px);
+    min-height: 100vh;
+    margin: 0 auto;
+    /* display: flex;
+    flex-direction: column;     */
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.menu-section {
+    width: calc(100% - 92px);
+    min-height: 140px;
+    padding: 70px 46px;
+    border-bottom: 1px solid #D2D2D2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    box-sizing: content-box;
+}
+
+.graphic {
+    font-size: 78.72px;
+    line-height: 98.4px;
+    align-items: center;
+    text-align: center;
+    width: 70px;
+    height: 89px;
+    margin: 20px;
+}
+
+.food {
+    font-size: 28px;
+    line-height: 1;
+    width: auto;
+    color: #000000;
+    margin: 0 0 10px;
+}
+
+.condiments {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 358px;
+    color: #666666;
+    margin: 0 0 8px;
+}
+
+.price {
+    font-size: 20px;
+    line-height: 1.2;
+    width: auto;
+    color: #000000;
+    margin: 0;
+    /* margin-bottom: 20px; */
+}
+
+.icon-btn {
+    background: none;      /* remove default button background */
+    border: 1.5px solid #DEDEDE;          /* remove border */
+    cursor: pointer;       /* show pointer on hover */
+    font-size: 32px;       /* size of the icon */
+    color: #3C3C3C;        /* icon color */
+    min-width: 44px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin: 20px 10px;
+    font-weight: 200;
+    line-height: 24px;
+  }
+
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid #0b5fff;
+    outline-offset: 3px;
+}
+
+.order-container, .total-container{
+    display: flex;
+    margin: 5px auto;
+    justify-content: space-around;
+}
+
+h2 {
+    display: flex;
+    white-space: nowrap;
+    margin: 45px auto;
+    width: max-content;
+}
+
+h2, .meal{
+    font-size: 28px;
+    line-height: 1;
+    color: #000000;
+}
+
+.details {
+    display: flex;
+}
+
+.text-btn {
+  background: none;      /* remove background */
+  border: none;         /* remove border */
+  padding: 0;            /* remove extra space */
+  margin: 25px 0;
+  font: inherit;         /* inherit font styles */
+  color: #5f6368;        /* text color */
+  cursor: pointer;       /* pointer on hover */
+  width: 77px;
+  height: 22px;
+  font-size: 12px;
+  line-height: 24px;
+  align-content: center;
+}
+
+.text-btn:focus {
+  outline: 3px solid #0b5fff;
+  outline-offset: 3px;
+}
+
+.horizontal-line {
+    border: none;
+    height: 2px; /* Adjust thickness */
+    background-color: #393333; /* Set color */
+    width: calc(100% - 92px);
+}
+
+.total-price {
+    font-size: 28px;
+    line-height: 1;
+}
+
+.total {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.total-description{
+    margin-top: 8px;
+}
+
+.complete-btn {
+    width: calc(100% - 92px);
+    height: 60px;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    display: block;        /* ensures it behaves like a block */    
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 45px auto;
+}
+
+
+.complete-btn, .btn-pay{
+    background-color: #00875a;
+    color: #FFFFFF;
+}
+
+#payment-title, .complete-btn, .btn-pay {
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+#payment-title {
+    font-size: 24px;
+    line-height: 31.12px;
+    padding-bottom: 10px;
+    width: 304.37px;
+    height: 40.92px;
+}
+
+.order-list {
+    padding-bottom: 32px;
+}
+
+.checkout {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Modal content box */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto; /* Centered vertically and horizontally */
+  padding: 20px;
+  border: none;
+  width: min(calc(100% - 40px), 524px); 
+  height: 542.24px;
+  box-sizing: border-box;
+  border-radius: 1.3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: #f1f3f4;
+  color: #202124;
+  cursor: pointer;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 28px;
+  line-height: 1;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input::placeholder {
+  color: #757575; /* Changes the color of the placeholder text */
+  font-size: 20px; /* Adjusts the font size */
+  font-family: Verdana, Tahoma, sans-serif;
+  line-height: 31.12px;
+  opacity: 1; /* Ensures the placeholder is fully opaque (default can be less) */
+  align-content: center;
+  justify-content: center;
+}
+
+/* Close button
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+} */
+
+/* When the modal is open, display it as a flex container */
+.checkout.open {
+  display: flex;
+}
+
+.text-edit {
+    width: min(475.91px, calc(100vw - 80px));
+    height: 71.30px;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+.txt-edt {
+    border: 1.3px solid #757575;
+    margin-bottom: 10px;
+    resize: none;
+    padding: 0 20px;
+}
+
+.btn-pay {
+    line-height: 31.12px;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.thanks-message {
+    margin: 45px auto;
+    width: calc(100% - 92px);
+    color: #065f46;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .intro {
+        width: auto;
+        padding-left: 24px;
+        padding-right: 24px;
+        line-height: 18px;
+    }
+
+    .menu-section {
+        width: calc(100% - 48px);
+        min-height: 124px;
+        height: auto;
+        padding: 40px 24px;
+        gap: 14px;
+    }
+
+    .graphic {
+        margin: 0;
+        width: 56px;
+        font-size: 58px;
+        line-height: 70px;
+    }
+
+    .food,
+    .condiments,
+    .price {
+        width: auto;
+        height: auto;
+    }
+
+    .condiments {
+        max-width: 180px;
+    }
+
+    .icon-btn {
+        flex: 0 0 44px;
+        width: 44px;
+        height: 44px;
+        margin: 0;
+    }
+
+    .horizontal-line,
+    .complete-btn,
+    .thanks-message {
+        width: calc(100% - 48px);
+    }
+}
